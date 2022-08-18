@@ -7,6 +7,16 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
+  text: string = 'Hello';
+  
   constructor() {}
+
+  changeText(){
+    this.text = 'I have changed from hello to goodbye'
+  }
+
+  changeBack() {
+    this.text = 'Hello'
+  }
 
 }
